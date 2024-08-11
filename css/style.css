@@ -1,0 +1,541 @@
+@font-face{
+    font-family: 'montserat';
+    src: url('..//font/Montserrat-.ttf');
+    src: url('..///font/Montserrat-ExtraBold.ttf') format('.ttf');
+    src: url('..//font/Montserrat-ExtraBold.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'montserat-medium';
+    src: url('..//font/Montserrat-Medium.ttf');
+    src: url('..//font/Montserrat-Medium.ttf') format('.ttf');
+    src: url('..//font/Montserrat-Medium.ttf')format('truetype');
+}
+body{
+    background-color: #F9F6EE;
+}
+
+
+
+/* loading page */
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    background-color: #F9F6EE;
+    display: flex;
+}
+
+.loader img{
+    width: 200px;
+    margin: auto;
+}
+
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+/* loading-page */
+
+
+
+/* HALAMAN UTAMA */
+    /* navigasi */
+.navbar{
+    padding: 25px;
+    background-color:#F9F6EE !important;
+}
+
+.uk-logo{
+    width: 90px;
+    
+}
+
+.navbar-nav{
+    width: 60% !important;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.nav-link{
+    font-family: 'montserat';
+    font-size: 25px;
+    color: black;
+}
+
+.nav-link:hover{
+    color: rgb(150, 150, 150);
+}
+
+.navbar-toggler{
+    margin: auto;
+}
+
+.navbar-bawah{
+    padding-top: 0;
+}
+
+.hide-menu{
+    display: none;
+}
+    /* close navigasi */
+
+
+    .mama-select .dropdown a{
+        width: 100%;
+        color: black;
+        background-color: white;
+        margin: 20px 0;
+    }
+
+    .dropdown-menu{
+        width: 100%;
+    }
+
+
+
+    /* responsive navigasi */
+@media(max-width:991px){
+    .uk-logo{
+        margin: auto;
+    }
+    .nav-link{
+        text-align: center;
+    }
+}
+    /* close responsive navigasi */
+
+
+
+    /* style konten foto */
+.konten-foto{
+    width: 100%;
+}
+
+.bg-foto{
+    width: 75%;
+    margin: auto;
+}
+
+.gambar{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.gambar-gallery{
+    width: 100%;   
+}
+
+.jarak-teks{
+    margin: 0 0 50px 0;
+    display: flex; 
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.respon-baju {
+    position: relative;
+    float: left; 
+  }
+
+  .respon-baju .baju-respon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+
+  .respon-baju:hover .baju-respon {
+    display: block;
+  }
+
+  .respon-baju:hover .respon-baju {
+    display: block;
+  }
+
+  .teks-deskripsi{
+    margin: auto;
+    font-family: montserat-medium;
+    color: black;
+  }
+
+  .respon-baju2{
+    height: fit-content;
+  }
+
+
+    /* close style konten foto */
+ /* CLOSE HALAMAN UTAMA */
+    
+
+
+
+
+/* HALAMAN GALLERY */
+    /* konten select */
+    .papa-select{
+        width: 100%;
+    }
+
+    .mama-select{
+        width: 80%;
+        margin: auto;
+    }
+    .papa-select{
+        display: none;
+    }
+
+    .active-sidebar{
+        color: rgb(150, 150, 150);
+    }
+
+
+
+    @media(max-width:700px){
+        .papa-select{
+            display: flex;
+        }
+    }
+
+
+    /* all gallery */
+.all-gallery{
+    width: 100%;
+    display: flex;
+}
+
+
+.gallery{
+    width: 95%;
+    margin: auto;
+    display: flex;
+}
+
+.konten-kiri{
+    width: 30%;
+    flex-direction: column;
+    display: flex;  
+}
+
+.konten-kiri a{
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 20px;
+    font-family: 'montserat';
+}
+
+.konten-kanan{
+    width: 70%;
+    overflow: hidden;
+}
+
+.navigasi-gallery{
+display: none;
+}
+    /* close all gallery */
+
+
+    /* detail produk */
+.adetail-produk{
+    width: 100%;
+    padding: 35px 0 135px 0;
+}
+
+.idetail-produk{
+    width: 95%;
+    margin: auto;
+    display: flex;
+}
+
+.detail-kiri{
+    width: 50%;
+}
+
+.detail-kanan{
+    width: 50%;
+    padding-left: 80px;
+}
+
+.gambaran-baju{
+    width: 100%;
+}
+
+.garis{
+    border: 2px solid rgb(0, 0, 0);
+    margin: 0 0 50px 0;
+}
+
+.harga{
+    margin: 0 0 55px 0;
+}
+
+.tehnik{
+    margin: 55px 0 0 0;
+}
+
+.mid{
+    padding-top: 10px;
+}
+
+.more-info{
+    padding-top: 15px;
+    font-family: montserat-medium;
+}
+
+
+
+@media(max-width:700px){
+    .idetail-produk{
+        flex-direction: column;
+    }
+    .detail-kanan{
+        width: 100%;
+        padding: 0;
+        margin: 30px 0 ;
+    }
+    .detail-kiri{
+        width: 100%;
+    }
+    .harga{
+        margin: 0 0 55px 0;
+    }
+    .tehnik{
+        margin: 55px 0 0 0;
+    }
+}
+    /* close detail produk */
+
+
+
+    /* responsive navigasi gallery */
+@media(max-width:991px){
+    .hide-menu{
+        display: block;
+    }
+    .navigasi-gallery{
+        display: block;
+    }
+}
+    /* close responsive navigasi gallery */
+
+
+
+    /* responsive gallery */
+@media(max-width : 700px) {
+    .konten-kiri{
+        display: none;
+    }
+    .konten-kanan{
+        width: 100%;
+    }
+}
+    /* close responsive gallery */
+ /* CLOSE HALAMAN GALLERY */
+
+
+
+
+
+/* HALAMAN BOOK */
+    /* history */
+    .ahistory{
+        width: 100%;
+    }
+
+    .ihistory{
+        width: 95%;
+        margin: auto;
+        display: flex;
+    }
+
+    .history-kiri{
+        width: 30%;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .history-kiri a{
+        width: 30%;
+        flex-direction: column;
+        display: flex;  
+        color: black;
+        text-decoration: none;
+        margin: 10px 0;
+        font-size: 20px;
+        font-family: 'montserat';
+    }
+
+    .history-kanan{
+        width: 70%;
+        overflow: hidden;  
+    }
+
+    .img-kiri-history{
+        justify-content: space-between;
+    }
+
+    /* book */
+    .img-kanan-history img{
+        height: 297px;
+        object-fit: cover;
+    }
+    
+    /* book */
+
+    /* culture */
+    .img-kanan-history-culture img{
+        height: 352px;
+        object-fit: cover;
+    }
+    /* culture */
+
+    /* unexpected */
+    .img-kanan-history-unexpected img{
+        height: 352px;
+        object-fit: cover;
+    }
+    /* unexpected */
+
+    /* konten teks */
+    .teks-paragraf-history{
+        text-align: justify;
+        text-indent: 35px;
+        margin: 0;
+    }
+
+    .teks-paragraf2-history{
+        text-align: justify;
+        margin: 0;
+    }
+
+    .hidden-text-history{
+        display: none;
+    }
+    /* tutup konten teks */
+
+    /* responsive book */
+    @media(max-width:700px){
+        .history-kiri{
+            display: none;
+        }
+        .history-kanan{
+            width: 100%;
+        }
+    }
+    /* close responsive book */
+
+    @media(max-width:991px){
+        .teks-paragraf-history{
+            display: none;
+        }
+
+        .teks-paragraf2-history{
+            display: none;
+        }
+
+        .hidden-text-history{
+            display: block;
+        }
+    }
+
+    .active-book{
+        color: rgb(150, 150, 150) !important;
+    }
+
+    /* tutup history */
+/* CLOSE HALAMAN BOOK */
+
+
+
+
+
+/* FLAGSHIP */
+.aflagship{
+    width: 100%;
+}
+
+.iflagship{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-inner{
+    display: flex;
+}
+
+.carousel-item{
+    width: 50% !important;
+    margin: auto !important;
+    margin-top: 25px !important; 
+}
+
+.gambar-flagship{
+    margin: auto;
+}
+
+/* .carousel-control-next-icon , .carousel-control-prev-icon{
+    height: 45px;
+    width: 45px;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+} */
+
+.teks-flagship{
+    font-family: 'montserat-medium';
+    padding-top: 55px;
+    
+}
+
+.teks-flagship h1 , .teks-flagship h3{
+    font-size: 20px;
+}
+
+.title-flagship{
+    font-family: 'montserat';
+
+}
+
+/* CLOSE FLAGSHIP */
+
+
+
+
+/* footer */
+.papa-text{
+    width: 100%;
+}
+
+.mama-text{
+    width: 80%;
+    margin: auto;
+}
+
+.footer-image{
+    display: flex;
+    padding: 25px;
+}
+.footer-image img{
+    width: 90px;
+    margin: auto;
+}
+
+.footer-text{
+    display: flex;
+    padding: 25px;
+}
+.footer-text p{
+    margin: auto;
+}
+
+.font-ilsn{
+    font-family: montserat;
+}
+/*  closefooter */
